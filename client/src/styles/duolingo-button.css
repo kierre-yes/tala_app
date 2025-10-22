@@ -1,0 +1,65 @@
+.duolingo-button {
+  position: relative;
+  border: none;
+  padding: 0;
+  background: transparent;
+  outline: none;
+  border-bottom: 6px solid;
+  transform: translateY(0);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duolingo-button:active {
+  transform: translateY(2px);
+  border-bottom-width: 4px;
+}
+
+.duolingo-button:disabled:active {
+  transform: translateY(0);
+  border-bottom-width: 6px;
+}
+
+.duolingo-button-front {
+  position: relative;
+  top: 0;
+  display: block;
+  width: 100%;
+  user-select: none;
+  transform: translateY(0);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duolingo-button:active .duolingo-button-front {
+  transform: translateY(2px);
+}
+
+.duolingo-button:disabled:active .duolingo-button-front {
+  transform: translateY(0);
+}
+
+.duolingo-button:hover:not(:disabled) .duolingo-button-front {
+  transform: translateY(-2px);
+}
+
+.duolingo-button:focus:not(:disabled) {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.duolingo-button-success {
+  background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 4px 0 #065f46;
+}
+
+.duolingo-button-success:active {
+  box-shadow: 0 2px 0 #065f46;
+}
+
+.duolingo-button-warning {
+  background: linear-gradient(180deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 4px 0 #92400e;
+}
+
+.duolingo-button-warning:active {
+  box-shadow: 0 2px 0 #92400e;
+}
