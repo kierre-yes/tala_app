@@ -56,10 +56,10 @@ const Button: React.FC<ButtonProps> = ({
         }
         case 'cta':
         return {
-          bg: 'bg-white-400',
-          border: 'border-white-600',
-          hover: 'hover:bg-white-300',
-          active: 'active:bg-white-500'
+          bg: 'bg-gray-50',
+          border: 'border-gray-200',
+          hover: 'hover:bg-gray-100',
+          active: 'active:bg-gray-100'
         }
       default:
         return {
