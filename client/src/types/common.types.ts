@@ -1,3 +1,8 @@
+declare module "*.pdf" {
+  const content: string;
+  export default content;
+}
+
 export interface BaseResponse {
   success: boolean
   message: string
@@ -10,7 +15,7 @@ export interface ApiError {
 
 export interface ButtonProps {
   children: React.ReactNode
-  variant?: 'primary' | 'secondary' | 'outline'
+  variant?: 'primary' | 'secondary' | 'outline' | 'success' | 'danger' | 'warning' | 'cta'
   size?: 'sm' | 'md' | 'lg'
   onClick?: () => void
   disabled?: boolean

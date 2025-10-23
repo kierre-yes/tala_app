@@ -26,7 +26,7 @@ const CTASection: React.FC = () => {
               <Button
                 variant="cta"
                 size="lg"
-                className="bg-white text-gray-800 hover:bg-gray-50"
+                className=" text-gray-950 hover:bg-gray-50"
               >
                 Start Learning Now
               </Button>
@@ -34,13 +34,13 @@ const CTASection: React.FC = () => {
               <Button
                 variant="cta"
                 size="lg"
-                className=" text-gray-800 bg-white hover:bg-gray-50"
+                className=" text-gray-950  hover:bg-gray-50"
               >
                 Learn More
               </Button>
             </div>
 
-            <p className="text-primary-200 text-sm mt-6">
+            <p className=" text-gray-50  text-sm mt-6">
              • You can start for free • Learn anywhere
             </p>
           </div>
