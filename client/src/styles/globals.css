@@ -29,3 +29,23 @@
     background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
   }
 }
+
+
+/* Hide Clerk branding */
+.cl-branded {
+  display: none !important;
+}
+
+.cl-footer {
+  display: none !important;
+}
+
+[data-clerk-element="footer"] {
+  display: none !important;
+}
+
+.cl-component-footer,
+.cl-internal-footer,
+.clerk-footer {
+  display: none !important;
+}
